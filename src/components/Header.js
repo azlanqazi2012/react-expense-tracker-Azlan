@@ -1,8 +1,8 @@
 import React from 'react';
 export const Header = () => {
     return (
-        <h1>
-            Expense Tracker by Azlan
+        <h1 className="header">
+            Expense Tracker by <br/>M. Azlan
         </h1>
     )
 }
