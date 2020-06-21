@@ -22,11 +22,11 @@ export const GlobalContext=createContext(initialState);
 // create a provider for the global context
 
 export const GlobalProvider=({children})=>{
-    const [state,dispatch]= useReducer(AppReducer,initialState)
+    const [state]= useReducer(AppReducer,initialState)
     return (
         <GlobalContext.Provider value={
             {
-            transaction:state.transactions
+            transactions:state.transactions
             }
         }
         >
